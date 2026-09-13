@@ -21,7 +21,7 @@ function Sobre() {
               SOBRE
             </span>
 
-            <h1 className="page-title">
+            <h1>
               Sobre a empresa
             </h1>
 
