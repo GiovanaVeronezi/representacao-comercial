@@ -42,7 +42,7 @@ function Sobre() {
               <div className="about-image">
 
                 <img
-                  src="/public/imagens/representacao-cyborg.jpg"
+                  src="/imagens/representacao-cyborg.jpg"
                   alt="Representação Cyborg"
                 />
 

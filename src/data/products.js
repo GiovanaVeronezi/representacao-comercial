@@ -4,7 +4,7 @@ const products = [
     name: "Portão Metalizado Rosa",
     category: "Portões",
     description: "Modernidade e Personalidade.",
-    image: "/public/imagens/portao-rosa.jpg",
+    image: "/imagens/portao-rosa.jpg",
   },
 
   {
@@ -12,7 +12,7 @@ const products = [
     name: "Portão Amadeirado",
     category: "Portões",
     description: "Elegância e Aconchego.",
-    image: "/public/imagens/portao-amadeirado.jpg",
+    image: "/imagens/portao-amadeirado.jpg",
   },
 
   {
@@ -20,7 +20,7 @@ const products = [
     name: "Portão Metalizado Preto",
     category: "Portões",
     description: "Sofisticação e Segurança.",
-    image: "/public/imagens/portao-preto.jpg",
+    image: "/imagens/portao-preto.jpg",
   },
 
   {
@@ -29,7 +29,7 @@ const products = [
     category: "Guarda-Corpo",
     description:
       "Leveza e Modernidade.",
-    image: "/public/imagens/vidro.jpg",
+    image: "/imagens/vidro.jpg",
   },
 
   {
@@ -37,7 +37,7 @@ const products = [
     name: "Corrimão Metálico Amarelo",
     category: "Corrimãos",
     description: "Segurança e Resistência.",
-    image: "/public/imagens/corrimao-amarelo.jpg",
+    image: "/imagens/corrimao-amarelo.jpg",
   },
 
   {
@@ -45,7 +45,7 @@ const products = [
     name: "Estrutura Metálica",
     category: "Estruturas Galpões",
     description: "Durabilidade e Robustez.",
-    image: "/public/imagens/estrutura.jpg",
+    image: "/imagens/estrutura.jpg",
   },
 ];
 
