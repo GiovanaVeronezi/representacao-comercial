@@ -1,0 +1,27 @@
+:root {
+  --primary: #171719;
+  --primary-light: #3a181b;
+  --primary-lighter: #8f252d;
+
+  --accent: #c92732;
+  --accent-light: #e03f49;
+
+  --text: #171719;
+  --text-secondary: #5f6269;
+  --text-light: #f3e9e9;
+
+  --background: #fffdfc;
+  --background-light: #f6f2f2;
+
+  --border: #e5dddd;
+  --muted: #8b8587;
+  --surface-muted: #ece7e7;
+  --on-primary: #ffffff;
+  --shadow: rgba(23, 23, 25, 0.1);
+
+  --container: 1200px;
+
+  --radius: 6px;
+
+  --transition: 0.3s ease;
+}
