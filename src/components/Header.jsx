@@ -1,30 +1,20 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
 
 import company from "../data/company";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const location = useLocation();
-
   function closeMenu() {
     setMenuOpen(false);
   }
-
-  function isActive(path) {
-  if (path === "/") {
-    return location.pathname === "/";
-  }
-
-  return location.pathname.startsWith(path);
-}
 
   return (
     <header className="header">
       <div className="header-container">
 
+        {/* LOGO */}
         <Link
           to="/"
           className="logo"
@@ -36,7 +26,9 @@ function Header() {
             className="logo-image"
           />
 
-          <span className="logo-name">{company.name}</span>
+          <span className="logo-name">
+            {company.name}
+          </span>
         </Link>
 
         {/* BOTÃO DO MENU */}
@@ -64,47 +56,49 @@ function Header() {
             menuOpen ? "nav-open" : ""
           }`}
         >
-          <Link
+
+          <NavLink
             to="/"
-            className={`nav-link ${
-              isActive("/") ? "active" : ""
-            }`}
+            end
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active" : ""}`
+            }
             onClick={closeMenu}
           >
             Início
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/sobre"
-            className={`nav-link ${
-              isActive("/sobre") ? "active" : ""
-            }`}
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active" : ""}`
+            }
             onClick={closeMenu}
           >
             Sobre
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/portoes"
-            className={`nav-link ${
-              isActive("/portoes") ? "active" : ""
-            }`}
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active" : ""}`
+            }
             onClick={closeMenu}
           >
             Produtos
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/contato"
-            className={`nav-link nav-link-contact ${
-            isActive("/contato") ? "active" : ""
-            }`}
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active" : ""}`
+            }
             onClick={closeMenu}
           >
             Contato
-          </Link>
-        </nav>
+          </NavLink>
 
+        </nav>
       </div>
     </header>
   );
